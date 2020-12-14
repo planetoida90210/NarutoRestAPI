@@ -15,4 +15,13 @@ export class NarutoService {
       res.json(naruto)
     })
   }
+  public addNewCharacter(req: Request, res: Response) {
+    const newCharacter = new Naruto(req.body);
+    newCharacter.save((error: Error, naruto: MongooseDocument) =>{
+      if(error){
+        res.send(error);
+      }
+      res.json(naruto)
+    })
+  }
 };
