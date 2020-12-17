@@ -68,6 +68,7 @@
     "forceConsistentCasingInFileNames": true, /* Disallow inconsistently-cased references to the same file. */
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "strictNullChecks": false
   },
   "exclude": ["node_modules"],
 "include": ["src/**/*.ts"]

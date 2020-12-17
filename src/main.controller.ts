@@ -10,6 +10,7 @@ this.routes();
 }
 public routes() {
 this.app.route("/").get(this.narutoService.welcomeMessage);
-this.app.route("/all").get(this.narutoService.getAllNaruto)
+this.app.route("/all").get(this.narutoService.getAllNaruto);
+this.app.route("/character").post(this.narutoService.addNewCharacter);
 }
 }
